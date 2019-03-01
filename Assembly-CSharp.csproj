@@ -60,6 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Attacker.cs" />
+    <Compile Include="Assets\Scripts\AttackerSpawner.cs" />
     <Compile Include="Assets\Scripts\LevelLoad.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Data/Andre/Unity/Repos/Glitch Garden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
