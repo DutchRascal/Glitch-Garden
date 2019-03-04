@@ -1,4 +1,5 @@
-﻿using System;
+﻿#pragma warning disable 649
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,8 @@ public class Health : MonoBehaviour
 
     [SerializeField] float health = 100f;
     [SerializeField] GameObject deathVFX;
+
+#pragma warning restore 649
 
     public void DealDamage(float damage)
     {
