@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class DefenderSpawner : MonoBehaviour
 {
+#pragma warning disable 649
 
     [SerializeField] GameObject defender;
+
+#pragma warning restore 649
 
     private void OnMouseDown()
     {
         Vector2 clickedPosition = GetSquareClicked();
-        print(clickedPosition);
         SpawnDefender(clickedPosition);
     }
 

@@ -7,7 +7,8 @@
       <File FileName="Assets/Scripts/Projectile.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/LevelLoad.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Health.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/DefenderSpawner.cs" Line="14" Column="22" />
+      <File FileName="Assets/Scripts/DefenderSpawner.cs" Line="8" Column="1" />
+      <File FileName="Assets/Scripts/DefenderButton.cs" Line="18" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
