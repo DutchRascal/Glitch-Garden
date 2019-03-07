@@ -5,7 +5,9 @@ using UnityEngine;
 public class DefenderButton : MonoBehaviour
 {
 
+#pragma warning disable 649
     [SerializeField] Defender defenderPrefab;
+#pragma warning restore 649
 
     private void OnMouseDown()
     {

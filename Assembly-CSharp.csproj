@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\LevelLoad.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\Shooter.cs" />
+    <Compile Include="Assets\Scripts\StarDisplay.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Volumes/Data/Andre/Unity/Repos/Glitch Garden/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
