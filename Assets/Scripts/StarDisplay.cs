@@ -37,6 +37,10 @@ public class StarDisplay : MonoBehaviour
         {
             print("No stars enough available");
         }
+    }
 
+    public bool HaveEnoughStars(int amount)
+    {
+        return stars >= amount;
     }
 }
