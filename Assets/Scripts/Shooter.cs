@@ -9,11 +9,13 @@ public class Shooter : MonoBehaviour
 
     [SerializeField] GameObject projectile, gun;
     AttackerSpawner myLaneSpawner;
+    Animator animator;
 
 #pragma warning restore  649
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         SetLaneSpawner();
     }
 
@@ -34,13 +36,11 @@ public class Shooter : MonoBehaviour
     {
         if (IsAttackerInLane())
         {
-            Debug.Log("Shoot");
-            //TODO
+            animator.SetBool("isAttacking", true);
         }
         else
         {
-            Debug.Log("Sit and Wait");
-            //TODO
+            animator.SetBool("isAttacking", false);
         }
     }
 
