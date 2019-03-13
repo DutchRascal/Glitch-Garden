@@ -9,7 +9,7 @@ public class AttackerSpawner : MonoBehaviour
     bool spawn = true;
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 5f;
-    [SerializeField] Attacker attackerPrefab;
+    [SerializeField] Attacker[] attackerPrefabArray;
 #pragma warning restore 649
 
     IEnumerator Start()
@@ -22,13 +22,16 @@ public class AttackerSpawner : MonoBehaviour
 
     }
 
-    private void SpawnAttacker()
+    private void Spawn(Attacker myAttacker)
     {
-        Attacker newAttacker = Instantiate(attackerPrefab, transform.position, transform.rotation) as Attacker;
+        Attacker newAttacker = Instantiate(myAttacker, transform.position, transform.rotation) as Attacker;
         newAttacker.transform.parent = transform;
     }
 
-    void Update()
+    private void SpawnAttacker()
     {
+        var attackerIndex = Random.Range(0, attackerPrefabArray.Length);
+        Spawn(attackerPrefabArray[attackerIndex]);
     }
+
 }
