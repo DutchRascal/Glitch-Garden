@@ -39,7 +39,6 @@ public class LivesDisplay : MonoBehaviour
     IEnumerator WaitForTime()
     {
         yield return new WaitForSeconds(timeToWait);
-        print("Yield");
         FindObjectOfType<LevelLoad>().LoadYouLose();
     }
 

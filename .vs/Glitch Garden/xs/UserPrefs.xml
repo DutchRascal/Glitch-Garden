@@ -1,9 +1,11 @@
 ﻿<Properties StartupConfiguration="{57519B5A-0702-8D5E-8344-BE203C54CCC3}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LivesDisplay.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameTimer.cs">
     <Files>
-      <File FileName="Assets/Scripts/DamageCollider.cs" Line="12" Column="2" />
-      <File FileName="Assets/Scripts/LivesDisplay.cs" Line="40" Column="5" />
-      <File FileName="Assets/Scripts/LevelLoad.cs" Line="34" Column="47" NotebookId="1" />
+      <File FileName="Assets/Scripts/DamageCollider.cs" Line="3" Column="28" />
+      <File FileName="Assets/Scripts/LivesDisplay.cs" Line="35" Column="1" />
+      <File FileName="Assets/Scripts/Shooter.cs" Line="39" Column="31" />
+      <File FileName="Assets/Scripts/GameTimer.cs" Line="7" Column="6" />
+      <File FileName="Assets/Scripts/LevelLoad.cs" Line="30" Column="2" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
