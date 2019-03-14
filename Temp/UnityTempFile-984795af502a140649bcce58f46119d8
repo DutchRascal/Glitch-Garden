@@ -300,6 +300,7 @@
 /define:CSHARP_7_3_OR_NEWER
 "Assets/Scripts/Attacker.cs"
 "Assets/Scripts/AttackerSpawner.cs"
+"Assets/Scripts/Base.cs"
 "Assets/Scripts/Defender.cs"
 "Assets/Scripts/DefenderButton.cs"
 "Assets/Scripts/DefenderSpawner.cs"
@@ -307,6 +308,7 @@
 "Assets/Scripts/Gravestone.cs"
 "Assets/Scripts/Health.cs"
 "Assets/Scripts/LevelLoad.cs"
+"Assets/Scripts/LivesDisplay.cs"
 "Assets/Scripts/Lizard.cs"
 "Assets/Scripts/Projectile.cs"
 "Assets/Scripts/Shooter.cs"
