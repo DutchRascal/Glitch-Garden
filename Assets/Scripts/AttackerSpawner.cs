@@ -1,11 +1,10 @@
-﻿#pragma warning disable 649
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AttackerSpawner : MonoBehaviour
 {
+#pragma warning disable 649
     bool spawn = true;
     [SerializeField] float minSpawnDelay = 1f;
     [SerializeField] float maxSpawnDelay = 5f;
@@ -20,6 +19,11 @@ public class AttackerSpawner : MonoBehaviour
             SpawnAttacker();
         }
 
+    }
+
+    public void StopSpawning()
+    {
+        spawn = false;
     }
 
     private void Spawn(Attacker myAttacker)
