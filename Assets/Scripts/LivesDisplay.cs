@@ -10,7 +10,6 @@ public class LivesDisplay : MonoBehaviour
     [SerializeField] int damage = 1;
 
     Text livesText;
-    LevelLoad levelLoad;
 
     void Start()
     {
@@ -39,7 +38,7 @@ public class LivesDisplay : MonoBehaviour
     IEnumerator WaitForTime()
     {
         yield return new WaitForSeconds(timeToWait);
-        FindObjectOfType<LevelLoad>().LoadYouLose();
+        FindObjectOfType<LevelLoader>().LoadYouLose();
     }
 
 }

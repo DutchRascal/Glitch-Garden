@@ -5,9 +5,18 @@ using UnityEngine;
 
 public class LevelController : MonoBehaviour
 {
+#pragma warning disable 649
+    [SerializeField] GameObject winLabel;
+    [SerializeField] float waitToLoad = 4;
+#pragma warning restore 649
 
     int numberOfAttackers = 0;
     bool levelTimerFinished = false;
+
+    private void Start()
+    {
+        winLabel.SetActive(false);
+    }
 
     public void AttackerSpawned()
     {
@@ -19,7 +28,7 @@ public class LevelController : MonoBehaviour
         numberOfAttackers--;
         if (numberOfAttackers <= 0 && levelTimerFinished)
         {
-            print("End Level Now");
+            StartCoroutine(HandleWinCondition());
         }
     }
 
@@ -37,4 +46,13 @@ public class LevelController : MonoBehaviour
             spawner.StopSpawning();
         }
     }
+
+    IEnumerator HandleWinCondition()
+    {
+        winLabel.SetActive(true);
+        GetComponent<AudioSource>().Play();
+        yield return new WaitForSeconds(waitToLoad);
+        FindObjectOfType<LevelLoader>().LoadNextScene();
+    }
+
 }
