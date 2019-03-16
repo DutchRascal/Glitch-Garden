@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a71c027aad7ab4ea6965f85dc9178aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lives: 50
+  lives: 1
   timeToWait: 3
   damage: 1
 --- !u!1 &1394319084
@@ -526,7 +526,7 @@ GameObject:
   - component: {fileID: 29366526}
   - component: {fileID: 332286697}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Main Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

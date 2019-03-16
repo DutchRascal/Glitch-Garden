@@ -6,7 +6,6 @@ public class LivesDisplay : MonoBehaviour
 {
 
     [SerializeField] int lives = 5;
-    [SerializeField] int timeToWait = 3;
     [SerializeField] int damage = 1;
 
     Text livesText;
@@ -24,21 +23,13 @@ public class LivesDisplay : MonoBehaviour
 
     public void TakeLife()
     {
-        if (lives >= damage)
+        lives -= damage;
+        UpdateDisplay();
+        if (lives <= 0)
         {
-            lives -= damage;
-            UpdateDisplay();
-        }
-        else
-        {
-            StartCoroutine(WaitForTime());
+            FindObjectOfType<LevelController>().HandleLoseCondition();
         }
     }
 
-    IEnumerator WaitForTime()
-    {
-        yield return new WaitForSeconds(timeToWait);
-        FindObjectOfType<LevelLoader>().LoadYouLose();
-    }
 
 }

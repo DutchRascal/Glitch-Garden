@@ -6,7 +6,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
 #pragma warning disable 649
-    [SerializeField] GameObject winLabel;
+    [SerializeField] GameObject winLabel, loseLabel;
     [SerializeField] float waitToLoad = 4;
 #pragma warning restore 649
 
@@ -16,6 +16,7 @@ public class LevelController : MonoBehaviour
     private void Start()
     {
         winLabel.SetActive(false);
+        loseLabel.SetActive(false);
     }
 
     public void AttackerSpawned()
@@ -55,4 +56,9 @@ public class LevelController : MonoBehaviour
         FindObjectOfType<LevelLoader>().LoadNextScene();
     }
 
+    public void HandleLoseCondition()
+    {
+        loseLabel.SetActive(true);
+        Time.timeScale = 0;
+    }
 }
