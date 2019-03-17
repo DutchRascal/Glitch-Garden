@@ -125,6 +125,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fox
       objectReference: {fileID: 0}
+    - target: {fileID: 2437968875133351107, guid: 01103c189e9de4ce5bbaec56a17b259e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2437968875133351108, guid: 01103c189e9de4ce5bbaec56a17b259e,
         type: 3}
       propertyPath: m_LocalPosition.x

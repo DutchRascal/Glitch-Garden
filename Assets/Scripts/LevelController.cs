@@ -15,8 +15,11 @@ public class LevelController : MonoBehaviour
 
     private void Start()
     {
+        //if (GameObject.Find("Level Lost Canvas") != null)
+        //{
         winLabel.SetActive(false);
         loseLabel.SetActive(false);
+        //}
     }
 
     public void AttackerSpawned()
