@@ -12,6 +12,7 @@ public class LevelLoader : MonoBehaviour
     void Start()
     {
         currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        print(currentSceneIndex);
         if (currentSceneIndex == 0)
         {
             StartCoroutine(WaitForTime());
